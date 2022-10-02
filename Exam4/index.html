@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam 4</title>
+    <!-- Bootsrap icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav>
+            <div class="nav__left">
+                <span class="menu" id="menu"><img src="./Images/icon-menu.svg" alt="menu"></span>
+                <a href="#" class="nav__left__logo"><img src="./Images/logo.svg" alt="logo"></a>
+                <ul class="nav__left__ul">
+                    <li class="nav__left__ul__li"><a href="#">Collections</a></li>
+                    <li class="nav__left__ul__li"><a href="#">Men</a></li>
+                    <li class="nav__left__ul__li"><a href="#">Women</a></li>
+                    <li class="nav__left__ul__li"><a href="#">About</a></li>
+                    <li class="nav__left__ul__li"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="mobile__nav">
+                <div class="mobile__nav__wrapper">
+                    <ul class="mobile__nav__ul">
+                        <li><span class="mobile__menu__close"><img src="./Images/icon-close.svg" alt="close"></span></li>
+                        <li class="mobile__nav__ul__li"><a href="#">Collections</a></li>
+                        <li class="mobile__nav__ul__li"><a href="#">Men</a></li>
+                        <li class="mobile__nav__ul__li"><a href="#">Women</a></li>
+                        <li class="mobile__nav__ul__li"><a href="#">About</a></li>
+                        <li class="mobile__nav__ul__li"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav__right">
+                <span class="dark__mode"><i class="bi bi-moon-stars bi-brightness-high"></i></span>
+                <span class="cart"><img src="./Images/icon-cart.svg" alt="cart"></span>
+                <span class="avtr"><img src="./Images/image-avatar.png" alt="Avatar"></span>
+                <div class="cart__modal hide">
+                    <div class="cart__modal__top">
+                        <p class="title">
+                            Cart
+                        </p>
+                        <span class="close"><img src="./Images/icon-close.svg" alt="close"></span>
+                    </div>
+                    <p class="modal__txt">
+                        Your cart is empty
+                    </p>
+                    <div class="cart__modal__content hide">
+                        <div class="cart__item">
+                            <span class="item__foto">
+                                <img src="./Images/image-product-1.jpg" alt="item">
+                            </span>
+                            <div class="cart__item__description">
+                                Fall Limited Edition Sneakers $125 x <span id="modal__count"></span> <strong id="total__price">$</strong>
+                            </div>
+                            <span class="delete"><img src="./Images/icon-delete.svg" alt="delete"></span>
+                        </div>
+                        <button class="cart__orange__btn">
+                            Checkout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <section class="main__content">
+            <div class="main__content__left">
+                <div class="slide-content">
+                    <div class="slide-list">
+                       <div class="slide-item">
+                          <img src="./Images/image-product-1.jpg" alt="item">
+                       </div>
+                       <div class="slide-item">
+                          <img src="./Images/image-product-2.jpg" alt="item">
+                       </div>
+                       <div class="slide-item">
+                          <img src="./Images/image-product-3.jpg" alt="item">
+                       </div>
+                       <div class="slide-item">
+                          <img src="./Images/image-product-4.jpg" alt="item">
+                       </div>
+                    </div>
+                    <span class="prev">
+                       <img src="./Images/icon-previous.svg" alt="previous">
+                    </span>
+              
+                    <span class="next">
+                        <img src="./Images/icon-next.svg" alt="next">
+                    </span>
+                </div>
+                <div class="slide-list-bottom">
+                    <div class="slide-item-bottom">
+                        <img src="./Images/image-product-1.jpg" alt="item">
+                    </div>
+                    <div class="slide-item-bottom">
+                        <img src="./Images/image-product-2.jpg" alt="item">
+                    </div>
+                    <div class="slide-item-bottom">
+                        <img src="./Images/image-product-3.jpg" alt="item">
+                    </div>
+                    <div class="slide-item-bottom">
+                        <img src="./Images/image-product-4.jpg" alt="item">
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__content__right">
+                <p class="orange__text">
+                    sneaker company
+                </p>
+                <h1 class="title" id="content__title">
+                    Fall Limited Edition Sneakers
+                </h1>
+                <p class="description">
+                    These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.
+                </p>
+                <div class="price__wrapper">
+                    <div class="top">
+                        <span class="price" id="content__price">$125.00</span>
+                        <span class="discount">50%</span>
+                    </div>
+                    <p class="old-price">
+                        $250
+                    </p>
+                </div>
+                <div class="btn__wrappers">
+                    <div class="count__btn">
+                        <button class="minus"><img src="./Images/icon-minus.svg" alt="minus"></button>
+                        <p class="count">0</p>
+                        <button class="plus"><img src="./Images/icon-plus.svg" alt="plus"></button>
+                    </div>
+                    <div class="orange__btn">
+                        <img src="./Images/icon-cart-white.svg" alt="cart">
+                        Add to cart
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+</body>
+<script src="./plugin.js"></script>
+<script src="./main.js"></script>
+</html>
